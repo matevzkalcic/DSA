@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+ <head>
+<style>
+body {
+  background-color: darkgreen;
+  font-size: 125%;
+}
+
+v {
+  color: purple;
+}
+p {
+  background-color: #b5651d;
+  border-style: double;
+  border-color: red;
+  font-family: "Brush Script MT", "Courier New", monospace;
+}
+x {
+  color: white;
+  text-align: center;
+}
+
+.flex-container {
+  display: flex;
+  background-color: Gray;
+  flex-wrap: wrap;
+}
+
+.flex-container > div {
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+</style>
+</head>
+
+<body>
+The content of the <v>body element</v> is displayed in your browser.
+</body>
+<p>Neko besedilo, ki ima rjavo ozadje, rdečo obrobo in nenavaden font.</p>
+
+<svg width="100" height="100">
+  <rect width="100" height="100" stroke="blue" stroke-width="20" fill="lightgreen" />
+  <text x="30" y="50" class="small">Blaž</text>
+</svg>
+</br>
+<iframe width="560" height="315" 
+src="https://www.youtube.com/embed/4eUc1J_eArA?&autoplay=1" allow="autoplay" frameborder="0" 
+allowfullscreen> </iframe>
+</br>
+
+
+<div class="flex-container">
+<x>Graf temperature v odvisnosti od časa.</br>
+<iframe width="450" height="260" style="border: 1px solid black;" src="https://thingspeak.com/channels/1912091/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Temperatura&type=line"></iframe>
+</x>
+
+<x>Graf svetlosti v odvisnosti od časa.</br>
+<iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1912091/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Svetloba&type=line"></iframe>
+</x>
+
+<x>Trenutna temperatura.</br>
+<iframe width="450" height="260" style="border: 1px solid red;" src="https://thingspeak.com/channels/1912091/widgets/538392"></iframe>
+</x>
+
+<x>Primertnost svetlosti. Ob zadostni svetlosti sveti lučka.</br>
+<iframe width="450" height="260" src="https://thingspeak.com/channels/1912091/widgets/538397"></iframe>
+</x>
+</div>
+</html>
